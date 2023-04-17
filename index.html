@@ -7,15 +7,25 @@
     <title>Wagle Sathwik | Home</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="assets/ws.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="./js/bootstrap.js"></script>
+   
 </head>
-<body >
+<body id="body">
  
-    <nav class="navbar d-block navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar d-block navbar-expand-lg fixed-top navbar-light bg-light  ">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="./assets/ws.png" alt="" width="90" height="40" class="d-inline-block align-top" > </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <a class="navbar-brand animate__animated animate__fadeInLeft" href="#"><img src="./assets/ws.png" alt="" width="90" height="40" class="d-inline-block align-top" > </a>
+          <div class="theme-btn ms-auto">
+          <i class="fa-solid fa-sun mx-2 d-none fa-xl" id="sun"></i>
+          <i class="fa-solid fa-moon mx-2 fa-xl" id="moon"></i>
+        </div>
+          <button class="navbar-toggler shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon animate__animated animate__fadeInRight"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -30,16 +40,16 @@
           </div>
         </div>
       </nav>
-      <div class="container">
-x      <div class="row mt-4 ">
+      <div class="container " >
+x      <div class="row mt-4   ">
         <div class="  col col-12 col-md-12 col-lg-6 " style="width:30rem;">
           <img src="assets/img.svg" alt="" class="img-fluid">
           <div class="">
-            <p class=" display-4">Hi ! I am Sathwik</p>
+            <p class=" display-4 ">Hi ! I am Sathwik</p>
             <p class="display-7 text-muted">A web developer</p>
           </div>
         </div>
-        <div class="col col-12 mt-5  col-md-12 col-lg-6" >
+        <div class="col col-12 mt-5  col-md-12 col-lg-6  " >
           <p class="display-2">Introduction</p>
             <p class="card-title display-7 container" style="text-align:justify">I am currently a trainee in web development, and I am passionate about creating websites that are not only visually appealing but also user-friendly and functional. I am always eager to learn new technologies and techniques in order to keep up with the constantly evolving web development industry. With a strong work ethic and attention to detail, I am confident that I will excel in my training and eventually in my career as a web developer. I believe that my combination of technical skills, creativity, and a commitment to lifelong learning will help me achieve success in this field.
             </p>
@@ -51,29 +61,29 @@ x      <div class="row mt-4 ">
                 <div class="col">
               <p class=" skill-header mt-3">HTML</p>
               <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
               </div>
               <p class=" skill-header mt-3">CSS/SCSS</p>
               <div class="progress">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
               </div>
               <p class=" skill-header mt-3">JS</p>
               <div class="progress">
-                <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
               </div>
             </div>
 <div class="col">
               <p class=" skill-header mt-3">C/PYTHON/JAVA</p>
               <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
               </div>
               <p class=" skill-header mt-3">PHP</p>
               <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
               </div>
               <p class=" skill-header mt-3">MYSQL</p>
               <div class="progress">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
               </div>
             </div>
           </div>
@@ -82,17 +92,18 @@ x      <div class="row mt-4 ">
             <p class="display-2" id="projects">projects</p>
             <p class="card-title display-7 container" style="text-align:justify">During my training as a web developer, I have had the opportunity to work on several projects that have allowed me to put my skills into practice. For example, I contributed to the development of a responsive e-commerce website using HTML, CSS, and JavaScript. I also designed and implemented a blog website with a user-friendly interface using React. These projects required me to collaborate with team members, communicate effectively, and solve technical challenges. Through these experiences, I have gained confidence in my abilities as a web developer and look forward to applying these skills in future projects.</p>
             <div class="row container">
-              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card1.png" alt=""><div class="card-body"><p class=" h4">KnowYourCgpa</p><p class="card-text">Web application built to calculate grades of students at VTU. I worked as a frontend developer for this project. Built with use of HTML,CSS and JS.</p><a href="https://github.com/sathwik-14/KNOW_YOUR_CGPA" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://knowyourcgpa.onrender.com" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
-              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card2.png" alt=""><div class="card-body"><p class=" h4">Epicodus</p><p class="card-text">Web application for a teaching group that give updates on latest courses. It is also a  platform for students to register to those courses.I worked as a part of design team.</p><a href="https://github.com/sathwik-14/Epicodus" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://epicode3.github.io/Epicodus/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
-              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card3.png" alt=""><div class="card-body"><p class=" h4">WisdomRecipes</p><p class="card-text">A recipe website built using HTML,SCSS and JS.This project helped me to understand sass(CSS with superpower) and its functionality. </p><a href="https://github.com/sathwik-14/WisdomRecipes" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://sathwik-14.github.io/WisdomRecipes/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
-              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card4.png" alt=""><div class="card-body"><p class=" h4">WisdomTravels</p><p class="card-text">A travel website built using HTML and pure CSS.This was part of my training at pacewisdom solutions.</p><a href="https://github.com/sathwik-14/wisdomtravels" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://sathwik-14.github.io/wisdomtravels/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
-              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card5.png" alt=""><div class="card-body"><p class=" h4">LearnWithMe</p><p class="card-text">A website co-developer as a part of internship at devincept.This project helped me to set foundation for my web development journey.</p><a href="https://github.com/sathwik-14/Learn-with-me" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://sathwik-14.github.io/Learn-with-me/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
+              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card1.png" alt=""><div class="card-body"><p class=" h4"><code>KnowYourCgpa</code></p><p class="card-text">Web application built to calculate grades of students at VTU. I worked as a frontend developer for this project. Built with use of HTML,CSS and JS.</p><a href="https://github.com/sathwik-14/KNOW_YOUR_CGPA" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://knowyourcgpa.onrender.com" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
+              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card6.png" alt=""><div class="card-body"><p class=" h4"><code>Product Landing Page</code></p><p class="card-text">This website is a clone of official apple watch ultra landing page built using help of bootstrap.</p><a href="https://github.com/sathwik-14/apple-watch-website-clone" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://waglesathwik-applewatchultra.onrender.com/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
+              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card2.png" alt=""><div class="card-body"><p class=" h4"><code>Epicodus</code></p><p class="card-text">Web application for a teaching group that give updates on latest courses. It is also a  platform for students to register to those courses.I worked as a part of design team.</p><a href="https://github.com/sathwik-14/Epicodus" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://epicode3.github.io/Epicodus/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
+              <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card3.png" alt=""><div class="card-body"><p class=" h4"><code>WisdomRecipes</code></p><p class="card-text">A recipe website built using HTML,SCSS and JS.This project helped me to understand sass(CSS with superpower) and its functionality. </p><a href="https://github.com/sathwik-14/WisdomRecipes" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://sathwik-14.github.io/WisdomRecipes/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>
+              <!-- <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card4.png" alt=""><div class="card-body"><p class=" h4"><code>WisdomTravels</code></p><p class="card-text">A travel website built using HTML and pure CSS.This was part of my training at pacewisdom solutions.</p><a href="https://github.com/sathwik-14/wisdomtravels" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://sathwik-14.github.io/wisdomtravels/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div> -->
+              <!-- <div class="col col-lg-4 col-sm-12 col-md-6 mt-4"><div class="card"><img src="assets/card5.png" alt=""><div class="card-body"><p class=" h4"><code>LearnWithMe</code></p><p class="card-text">A website co-developer as a part of internship at devincept.This project helped me to set foundation for my web development journey.</p><a href="https://github.com/sathwik-14/Learn-with-me" class="btn btn-outline-primary">Source Code&nbsp;<i class="fa-solid fa-code"></i></a>&nbsp;<a href="https://sathwik-14.github.io/Learn-with-me/" class="btn btn-outline-success">visit&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div> -->
             </div>
            </div>
            <div class="col mt-5 col-sm-12 col-lg-6" >
             <p class="display-2" id="contact">Contact</p>
               <p class="card-title display-7 container" style="text-align:justify">If you have any questions or would like to discuss potential opportunities, please do not hesitate to contact me. You can reach me via email at <a href="mailto:kywagle@gmail,com">kywagle</a> . I am always open to new ideas and collaboration, and I am eager to hear from potential employers or clients. Thank you for considering me as a candidate, and I look forward to hearing from you. Leave your mail to subscribe for weekly updates from me.</p>
-              <form>
+              <form class="container">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -112,12 +123,13 @@ x      <div class="row mt-4 ">
         </div>
       </div>
       </div>
+      <div class=" footer bg-primary container-fluid">
+        <div class="container-fluid">
+                <p>Website built by me  !</p>
+              </div>
+            </div>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js" integrity="sha512-uaZ0UXmB7NHxAxQawA8Ow2wWjdsedpRu7nJRSoI2mjnwtY8V5YiCWavoIpo1AhWPMLiW5iEeavmA3JJ2+1idUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <div class="row footer bg-primary container-fluid">
-<div class="container">
-        <p>Website built by me  !</p>
-      </div>
-    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
