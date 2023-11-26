@@ -2,6 +2,7 @@ const nighttheme = document.getElementsByClassName("fa-moon")[0];
 const daytheme = document.getElementById("sun");
 const navbar = document.getElementsByClassName("navbar")[0];
 const body = document.getElementById("body");
+const card_body = document.getElementsByClassName("card-body");
 let theme = "dark";
 
 nighttheme.addEventListener("click", function () {
@@ -28,3 +29,8 @@ if (localStorage.getItem("theme")) {
 } else {
   nighttheme.click();
 }
+
+window.onscroll = (e) => {
+  let progress = (document.documentElement.scrollTop / 1464) * 100;
+  document.getElementsByClassName("loader")[0].style.width = progress + "vw";
+};
