@@ -1,32 +1,37 @@
-*{
- user-select: none;   
-}
-.skill-header{
-    font-size:1.2rem;
-}
-.footer{
-    text-align: center;
-    color: #f2f2f2;
-    padding: 1rem;
-    margin-top: 1rem;
-}
-.fa-brands{
-    margin: 1rem;
-    font-size: 2rem;
-}
-.navbar-toggler-icon,.navbar-toggler{
-   border: none;
-}
-.fa-moon,.fa-sun{
-    cursor: pointer;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.body{
-    transition: all .5s ease;
-    color: rgba(250,250,250,.9) !important;
-    background-color: #2f2f2f !important;
-    .card-body{
-        background-color: #2f2f2f;
-    }
+* {
+  user-select: none;
+}
+.skill-header {
+  font-size: 1.2rem;
+}
+.fa-brands {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.navbar-toggler-icon,
+.navbar-toggler {
+  border: none;
+}
+.fa-moon,
+.fa-sun {
+  cursor: pointer;
 }
 
+.projects {
+  img {
+    height: 220px;
+  }
+}
+
+.body {
+  transition: all 0.3s ease;
+  color: rgba(250, 250, 250, 0.9) !important;
+  background-color: #2f2f2f !important;
+  .card-body {
+    background-color: #2f2f2f;
+  }
+}
