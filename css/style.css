@@ -8,6 +8,10 @@
           user-select: none;
 }
 
+#body {
+  overflow-x: hidden;
+}
+
 .skill-header {
   font-size: 1.2rem;
 }
@@ -27,8 +31,54 @@
   cursor: pointer;
 }
 
-.projects img {
-  height: 220px;
+.skills {
+  transition: all 0.5s ease;
+}
+.skills i {
+  font-size: 5rem;
+  cursor: pointer;
+}
+.skills .fa-html5 {
+  color: #e5532d;
+  background: -webkit-linear-gradient(left, #e5532d, #f16a30);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills .fa-css3 {
+  color: #0870c2;
+}
+.skills .fa-js {
+  color: #d7bc3b;
+}
+.skills .fa-angular {
+  color: #de0837;
+  background: -webkit-linear-gradient(left, #de0837, #e746f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills .fa-react {
+  color: #66dbfb;
+}
+.skills .fa-node {
+  color: #8fc708;
+}
+.skills .fa-bootstrap {
+  color: #8f1bfc;
+}
+
+.progress-container {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  z-index: 999;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
 }
 
 .loader {
