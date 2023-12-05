@@ -12,13 +12,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="./js/bootstrap.js"></script>
   </head>
   <body id="body" class="animate__animated animate__fadeIn">
     <nav
       class="navbar d-block navbar-expand-lg sticky-top navbar-light bg-light"
     >
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
             src="./assets/ws.png"
@@ -67,13 +68,13 @@
       <div class="row my-3">
 
         <div
-          class="col col-12 mt-5 col-md-12 col-lg-6 d-flex flex-column justify-content-center animate__animated animate__fadeInRight"
+          class="col col-12 mt-5 col-md-12 d-flex flex-column justify-content-center animate__animated animate__fadeInRight"
         >
-          <p class="display-1 fw-bold">Wagle Sathwik</p>
-          <p class="display-7 text-muted">Web Developer</p>
+          <p class="fw-bold hero-text"><span>&lt;</span>WAGLE SATHWIK<span>/&gt;</span> </p>
+          <p class="display-7 text-muted">Full Stack Web Developer</p>
         </div>
-        <div class="col mt-3 col-sm-12 col-lg-12 animate__animated animate__fadeInUp">
-          <p class="display-6 text-muted fw-bold skills">skills</p>
+        <div class="col mt-5 col-sm-12 col-lg-12 animate__animated animate__fadeInUp">
+          <p class="h3 fw-bold skills">skills</p>
           <!-- <p class="card-title display-7">
             In web development, technical skills such as programming languages
             and frameworks are essential, as well as design abilities. Soft
@@ -81,33 +82,65 @@
             success. Developing and honing these skills through practice and
             experience is key to becoming a well-rounded web developer.
           </p> -->
-          <div class="row skills">
-            <div class="col">
-              <i class="fa-brands fa-html5" title="HTML5"></i>
+          <div class="d-flex flex-wrap gap-3 skills mt-3">
+            <div class="d-flex justify-content-around group">
+              
+                <i class="bx bxl-html5" title="HTML5"></i>
+              
+              
+                <i class="bx bxl-css3" title="CSS3"></i>
+              
+              
+                <i class="bx bxl-javascript" title="JACASCRIPT"></i>
+              
+              <div class="position-absolute bottom-0 mb-1 text-muted">CORE</div>
             </div>
-            <div class="col">
-              <i class="fa-brands fa-css3" title="CSS3"></i>
+            <div class="d-flex justify-content-around group">
+              
+                <i class="bx bxl-angular" title="ANGULAR"></i>
+              
+              
+                <i class="bx bxl-react" title="REACT"></i>
+              
+              <div class="position-absolute bottom-0 mb-1 text-muted">FRAMEWORK</div>
             </div>
-            <div class="col">
-              <i class="fa-brands fa-js" title="JACASCRIPT"></i>
+            <div class="d-flex justify-content-around group">
+              
+                <i class="bx bxl-bootstrap" title="BOOTSTRAP"></i>
+              
+              
+                <i class="bx bxl-tailwind-css" title="TAILWIND-CSS"></i>
+              
+              <div class="position-absolute bottom-0 mb-1 text-muted">CSS LIBRARY</div>
             </div>
-            <div class="col">
-              <i class="fa-brands fa-angular" title="ANGULAR"></i>
+            <div class="d-flex justify-content-around group">
+              
+                <i class="bx bxl-mongodb" title="MONGODB"></i>
+              
+              
+                <i class="bx bxl-postgresql" title="POSTGRESQL"></i>
+              
+              <div class="position-absolute bottom-0 mb-1 text-muted">DATABASE</div>
             </div>
-            <div class="col">
-              <i class="fa-brands fa-react" title="REACT"></i>
+            <div class="d-flex justify-content-around group">
+              
+                <i class="bx bxl-nodejs" title="NODEJS"></i>
+              
+              <div class="position-absolute bottom-0 mb-1 text-muted">BACKEND</div>
             </div>
-            <div class="col">
-              <i class="fa-brands fa-node" title="NODEJS"></i>
-            </div>
-            <div class="col">
-              <i class="fa-brands fa-bootstrap" title="BOOTSTRAP"></i>
+            <div class="d-flex justify-content-around group">
+              
+                <i class="bx bxl-github" title="GITHUB"></i>
+                <i class="bx bxl-gitlab" title="GITLAB"></i>
+
+              
+              <div class="position-absolute bottom-0 mb-1 text-muted">VERSION CONTROL</div>
             </div>
           </div>
         </div>
         <div class="col mt-5 col-lg-12 col-sm-12 projects animate__animated animate__fadeInUp" data-aos="fade-up">
-          <p class="display-4 fw-bold" id="projects">projects</p>
-          <p class="card-title display-7 text-muted" style="text-align: justify">
+          <p class="h3 fw-bold" id="projects">projects</p>
+          <!-- <p class="card-title display-7 text-muted" style="text-align: justify">
             During my training as a web developer, I have had the opportunity to
             work on several projects that have allowed me to put my skills into
             practice. For example, I contributed to the development of a
@@ -118,14 +151,14 @@
             challenges. Through these experiences, I have gained confidence in
             my abilities as a web developer and look forward to applying these
             skills in future projects.
-          </p>
+          </p> -->
           <div class="row">
             <div
-              class="col col-lg-4 col-sm-12 col-md-6 mt-4"
+              class="col col-lg-4 col-sm-12 col-md-6"
               data-aos="zoom-in-up"
             >
               <div class="card">
-                <img height="220px" src="assets/card1.png" alt="" loading="lazy" />
+                <img loading="lazy" height="220px" src="assets/card1.png" alt="" loading="lazy" />
                 <div class="card-body">
                   <p class="h4"><code>KnowYourCgpa</code></p>
                   <!-- <p class="card-text">
@@ -136,12 +169,12 @@
                   <a
                     href="https://github.com/sathwik-14/KNOW_YOUR_CGPA"
                     class="btn btn-outline-primary"
-                    >Source Code&nbsp;<i class="fa-solid fa-code"></i></a
+                    >Source Code&nbsp;<i class="bx bx-code-alt"></i></a
                   >&nbsp;<a
                     href="https://knowyourcgpa.onrender.com"
                     class="btn btn-outline-success ms-2"
                     >visit&nbsp;<i
-                      class="fa fa-external-link"
+                      class="bx bx-link-external"
                       aria-hidden="true"
                     ></i
                   ></a>
@@ -149,11 +182,11 @@
               </div>
             </div>
             <div
-              class="col col-lg-4 col-sm-12 col-md-6 mt-4"
+              class="col col-lg-4 col-sm-12 col-md-6"
               data-aos="zoom-in-up"
             >
               <div class="card">
-                <img height="220px" src="assets/card6.png" alt="" />
+                <img loading="lazy" height="220px" src="assets/card6.png" alt="" />
                 <div class="card-body">
                   <p class="h4"><code>Product Landing Page</code></p>
                   <!-- <p class="card-text">
@@ -163,12 +196,12 @@
                   <a
                     href="https://github.com/sathwik-14/apple-watch-website-clone"
                     class="btn btn-outline-primary"
-                    >Source Code&nbsp;<i class="fa-solid fa-code"></i></a
+                    >Source Code&nbsp;<i class="bx bx-code-alt"></i></a
                   >&nbsp;<a
                     href="https://waglesathwik-applewatchultra.onrender.com/"
                     class="btn btn-outline-success ms-2"
                     >visit&nbsp;<i
-                      class="fa fa-external-link"
+                      class="bx bx-link-external"
                       aria-hidden="true"
                     ></i
                   ></a>
@@ -176,11 +209,11 @@
               </div>
             </div>
             <div
-              class="col col-lg-4 col-sm-12 col-md-6 mt-4"
+              class="col col-lg-4 col-sm-12 col-md-6"
               data-aos="zoom-in-up"
             >
               <div class="card">
-                <img height="220px" src="assets/card2.png" alt="" />
+                <img loading="lazy" height="220px" src="assets/card2.png" alt="" />
                 <div class="card-body">
                   <p class="h4"><code>Epicodus</code></p>
                   <!-- <p class="card-text">
@@ -191,12 +224,12 @@
                   <a
                     href="https://github.com/sathwik-14/Epicodus"
                     class="btn btn-outline-primary"
-                    >Source Code&nbsp;<i class="fa-solid fa-code"></i></a
+                    >Source Code&nbsp;<i class="bx bx-code-alt"></i></a
                   >&nbsp;<a
                     href="https://epicode3.github.io/Epicodus/"
                     class="btn btn-outline-success ms-2"
                     >visit&nbsp;<i
-                      class="fa fa-external-link"
+                      class="bx bx-link-external"
                       aria-hidden="true"
                     ></i
                   ></a>
@@ -204,11 +237,11 @@
               </div>
             </div>
             <div
-              class="col col-lg-4 col-sm-12 col-md-6 mt-4"
+              class="col col-lg-4 col-sm-12 col-md-6"
               data-aos="zoom-in-up"
             >
               <div class="card">
-                <img height="220px" src="assets/card3.png" alt="" />
+                <img loading="lazy" height="220px" src="assets/card3.png" alt="" />
                 <div class="card-body">
                   <p class="h4"><code>WisdomRecipes</code></p>
                   <!-- <p class="card-text">
@@ -219,12 +252,12 @@
                   <a
                     href="https://github.com/sathwik-14/WisdomRecipes"
                     class="btn btn-outline-primary"
-                    >Source Code&nbsp;<i class="fa-solid fa-code"></i></a
+                    >Source Code&nbsp;<i class="bx bx-code-alt"></i></a
                   >&nbsp;<a
                     href="https://sathwik-14.github.io/WisdomRecipes/"
                     class="btn btn-outline-success ms-2"
                     >visit&nbsp;<i
-                      class="fa fa-external-link"
+                      class="bx bx-link-external"
                       aria-hidden="true"
                     ></i
                   ></a>
@@ -233,8 +266,8 @@
             </div>
           </div>
         </div>
-        <div class="col mt-5 col-sm-12" data-aos="fade-up">
-          <p class="display-4 fw-bold" id="contact">Contact</p>
+        <div class="col mt-5 col-sm-12 contact" data-aos="fade-up">
+          <p class="h3 fw-bold" id="contact">Contact</p>
           <p class="card-title display-7 text-muted" style="text-align: justify">
             If you have any questions or would like to discuss potential
             opportunities, please do not hesitate to contact me. You can reach
@@ -267,16 +300,16 @@
           <br />
           <p>Don't forget to follow me on</p>
           <a href="https://github.com/sathwik-14"
-            ><i class="fa-brands fa-github-alt"></i
+            ><i class="bx bxl-github"></i
           ></a>
           <a href="https://www.facebook.com/wagle31/"
-            ><i class="fa-brands fa-facebook"></i
+            ><i class="bx bxl-facebook"></i
           ></a>
           <a href="https://www.linkedin.com/in/waglesathwik/"
-            ><i class="fa-brands fa-linkedin-in"></i
+            ><i class="bx bxl-linkedin"></i
           ></a>
           <a href="https://www.instagram.com/sathwikwagle/"
-            ><i class="fa-brands fa-instagram"></i
+            ><i class="bx bxl-instagram"></i
           ></a>
         </div>
       </div>

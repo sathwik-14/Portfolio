@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500&family=Source+Code+Pro&display=swap");
 ::-webkit-scrollbar {
   display: none;
 }
@@ -6,18 +7,34 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 
 #body {
   overflow-x: hidden;
 }
 
+.hero-text {
+  font-size: 5rem;
+  letter-spacing: 1.6rem;
+}
+.hero-text span {
+  color: orange !important;
+}
+@media (max-width: 600px) {
+  .hero-text {
+    font-size: 2.4rem;
+    letter-spacing: 1rem;
+  }
+}
+
 .skill-header {
   font-size: 1.2rem;
 }
 
-.fa-brands {
-  margin: 1rem;
+.contact i {
+  margin-right: 1rem;
   font-size: 2rem;
 }
 
@@ -31,39 +48,72 @@
   cursor: pointer;
 }
 
-.skills {
-  transition: all 0.5s ease;
+.skills .group {
+  background-color: rgba(48, 48, 48, 0.1);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  position: relative;
+}
+.skills .position-absolute {
+  font-size: 0.8rem;
+  color: rgba(255, 165, 0, 0.8) !important;
 }
 .skills i {
-  font-size: 5rem;
+  font-size: 4rem;
   cursor: pointer;
 }
-.skills .fa-html5 {
+.skills .bxl-html5 {
   color: #e5532d;
   background: -webkit-linear-gradient(left, #e5532d, #f16a30);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .fa-css3 {
+.skills .bxl-css3 {
   color: #0870c2;
 }
-.skills .fa-js {
+.skills .bxl-javascript {
   color: #d7bc3b;
 }
-.skills .fa-angular {
+.skills .bxl-angular {
   color: #de0837;
   background: -webkit-linear-gradient(left, #de0837, #e746f0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skills .fa-react {
+.skills .bxl-react {
   color: #66dbfb;
 }
-.skills .fa-node {
+.skills .bxl-nodejs {
   color: #8fc708;
 }
-.skills .fa-bootstrap {
+.skills .bxl-bootstrap {
   color: #8f1bfc;
+}
+.skills .bxl-tailwind-css {
+  color: #3ebff8;
+}
+.skills .bxl-mongodb {
+  color: #08ee69;
+}
+.skills .bxl-postgresql {
+  color: #396c94;
+}
+.skills .bxl-gitlab {
+  color: #e2492f;
+}
+
+.projects .col {
+  margin-top: 32px;
+}
+.projects .card {
+  padding: 0.5rem;
+  background-color: transparent !important;
+  border: 1px solid rgba(128, 128, 128, 0.2) !important;
+  border-radius: 8px;
+}
+.projects img {
+  border-radius: 8px;
 }
 
 .progress-container {
@@ -82,7 +132,7 @@
 }
 
 .loader {
-  height: 3px;
+  height: 2px;
   background-color: green;
   position: sticky;
   top: 66px;
@@ -94,7 +144,4 @@
   transition: all 0.3s ease;
   color: rgba(250, 250, 250, 0.9) !important;
   background-color: #2f2f2f !important;
-}
-.body .card-body {
-  background-color: #2f2f2f;
 }/*# sourceMappingURL=style.css.map */
