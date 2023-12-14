@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wagle Sathwik | Home</title>
-    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="assets/ws.png" type="image/x-icon" />
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </head>
-  <body id="body" class="animate__animated animate__fadeIn">
+  <body id="body">
     <nav
       class="navbar d-block navbar-expand-lg sticky-top navbar-light bg-light"
     >
@@ -42,9 +41,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span
-            class="navbar-toggler-icon animate__animated animate__fadeInRight"
-          ></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -66,14 +63,15 @@
     </div>
     <div class="container" id="scroll-container">
       <div class="row my-3">
-
         <div
-          class="col col-12 mt-5 col-md-12 d-flex flex-column justify-content-center animate__animated animate__fadeInRight"
+          class="col col-12 mt-5 col-md-12 d-flex flex-column justify-content-center"
         >
-          <p class="fw-bold hero-text"><span>&lt;</span>WAGLE SATHWIK<span>/&gt;</span> </p>
+          <p class="fw-bold hero-text">
+            <span>&lt;</span>WAGLE SATHWIK<span>/&gt;</span>
+          </p>
           <p class="display-7 text-muted">Full Stack Web Developer</p>
         </div>
-        <div class="col mt-5 col-sm-12 col-lg-12 animate__animated animate__fadeInUp">
+        <div class="col mt-5 col-sm-12 col-lg-12">
           <p class="h3 fw-bold skills">skills</p>
           <!-- <p class="card-title display-7">
             In web development, technical skills such as programming languages
@@ -84,61 +82,59 @@
           </p> -->
           <div class="d-flex flex-wrap gap-3 skills mt-3">
             <div class="d-flex justify-content-around group">
-              
-                <i class="bx bxl-html5" title="HTML5"></i>
-              
-              
-                <i class="bx bxl-css3" title="CSS3"></i>
-              
-              
-                <i class="bx bxl-javascript" title="JACASCRIPT"></i>
-              
+              <i class="bx bxl-html5" title="HTML5"></i>
+
+              <i class="bx bxl-css3" title="CSS3"></i>
+
+              <i class="bx bxl-javascript" title="JACASCRIPT"></i>
+
               <div class="position-absolute bottom-0 mb-1 text-muted">CORE</div>
             </div>
             <div class="d-flex justify-content-around group">
-              
-                <i class="bx bxl-angular" title="ANGULAR"></i>
-              
-              
-                <i class="bx bxl-react" title="REACT"></i>
-              
-              <div class="position-absolute bottom-0 mb-1 text-muted">FRAMEWORK</div>
-            </div>
-            <div class="d-flex justify-content-around group">
-              
-                <i class="bx bxl-bootstrap" title="BOOTSTRAP"></i>
-              
-              
-                <i class="bx bxl-tailwind-css" title="TAILWIND-CSS"></i>
-              
-              <div class="position-absolute bottom-0 mb-1 text-muted">CSS LIBRARY</div>
-            </div>
-            <div class="d-flex justify-content-around group">
-              
-                <i class="bx bxl-mongodb" title="MONGODB"></i>
-              
-              
-                <i class="bx bxl-postgresql" title="POSTGRESQL"></i>
-              
-              <div class="position-absolute bottom-0 mb-1 text-muted">DATABASE</div>
-            </div>
-            <div class="d-flex justify-content-around group">
-              
-                <i class="bx bxl-nodejs" title="NODEJS"></i>
-              
-              <div class="position-absolute bottom-0 mb-1 text-muted">BACKEND</div>
-            </div>
-            <div class="d-flex justify-content-around group">
-              
-                <i class="bx bxl-github" title="GITHUB"></i>
-                <i class="bx bxl-gitlab" title="GITLAB"></i>
+              <i class="bx bxl-angular" title="ANGULAR"></i>
 
-              
-              <div class="position-absolute bottom-0 mb-1 text-muted">VERSION CONTROL</div>
+              <i class="bx bxl-react" title="REACT"></i>
+
+              <div class="position-absolute bottom-0 mb-1 text-muted">
+                FRAMEWORK
+              </div>
+            </div>
+            <div class="d-flex justify-content-around group">
+              <i class="bx bxl-bootstrap" title="BOOTSTRAP"></i>
+
+              <i class="bx bxl-tailwind-css" title="TAILWIND-CSS"></i>
+
+              <div class="position-absolute bottom-0 mb-1 text-muted">
+                CSS LIBRARY
+              </div>
+            </div>
+            <div class="d-flex justify-content-around group">
+              <i class="bx bxl-mongodb" title="MONGODB"></i>
+
+              <i class="bx bxl-postgresql" title="POSTGRESQL"></i>
+
+              <div class="position-absolute bottom-0 mb-1 text-muted">
+                DATABASE
+              </div>
+            </div>
+            <div class="d-flex justify-content-around group">
+              <i class="bx bxl-nodejs" title="NODEJS"></i>
+
+              <div class="position-absolute bottom-0 mb-1 text-muted">
+                BACKEND
+              </div>
+            </div>
+            <div class="d-flex justify-content-around group">
+              <i class="bx bxl-github" title="GITHUB"></i>
+              <i class="bx bxl-gitlab" title="GITLAB"></i>
+
+              <div class="position-absolute bottom-0 mb-1 text-muted">
+                VERSION CONTROL
+              </div>
             </div>
           </div>
         </div>
-        <div class="col mt-5 col-lg-12 col-sm-12 projects animate__animated animate__fadeInUp" data-aos="fade-up">
+        <div class="col mt-5 col-lg-12 col-sm-12 projects" data-aos="fade-up">
           <p class="h3 fw-bold" id="projects">projects</p>
           <!-- <p class="card-title display-7 text-muted" style="text-align: justify">
             During my training as a web developer, I have had the opportunity to
@@ -153,12 +149,15 @@
             skills in future projects.
           </p> -->
           <div class="row">
-            <div
-              class="col col-lg-4 col-sm-12 col-md-6"
-              data-aos="zoom-in-up"
-            >
+            <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
               <div class="card">
-                <img loading="lazy" height="220px" src="assets/card1.png" alt="" loading="lazy" />
+                <img
+                  loading="lazy"
+                  height="220px"
+                  src="assets/card1.png"
+                  alt=""
+                  loading="lazy"
+                />
                 <div class="card-body">
                   <p class="h4"><code>KnowYourCgpa</code></p>
                   <!-- <p class="card-text">
@@ -181,12 +180,14 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col col-lg-4 col-sm-12 col-md-6"
-              data-aos="zoom-in-up"
-            >
+            <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
               <div class="card">
-                <img loading="lazy" height="220px" src="assets/card6.png" alt="" />
+                <img
+                  loading="lazy"
+                  height="220px"
+                  src="assets/card6.jpg"
+                  alt=""
+                />
                 <div class="card-body">
                   <p class="h4"><code>Product Landing Page</code></p>
                   <!-- <p class="card-text">
@@ -208,25 +209,28 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col col-lg-4 col-sm-12 col-md-6"
-              data-aos="zoom-in-up"
-            >
+            <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
               <div class="card">
-                <img loading="lazy" height="220px" src="assets/card2.png" alt="" />
+                <img
+                  loading="lazy"
+                  height="220px"
+                  src="assets/card2.jpg"
+                  alt=""
+                />
                 <div class="card-body">
-                  <p class="h4"><code>Epicodus</code></p>
+                  <p class="h4"><code>Netflix Clone</code></p>
                   <!-- <p class="card-text">
                     Web application for a teaching group that give updates on
                     latest courses. It is also a platform for students to
                     register to those courses.I worked as a part of design team.
                   </p> -->
                   <a
-                    href="https://github.com/sathwik-14/Epicodus"
+                    href="https://github.com/sathwik-14/netflix-clone"
                     class="btn btn-outline-primary"
                     >Source Code&nbsp;<i class="bx bx-code-alt"></i></a
                   >&nbsp;<a
-                    href="https://epicode3.github.io/Epicodus/"
+                    href="https://main--netflixky.netlify.app/"
+                    target="_blank"
                     class="btn btn-outline-success ms-2"
                     >visit&nbsp;<i
                       class="bx bx-link-external"
@@ -236,12 +240,14 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col col-lg-4 col-sm-12 col-md-6"
-              data-aos="zoom-in-up"
-            >
+            <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
               <div class="card">
-                <img loading="lazy" height="220px" src="assets/card3.png" alt="" />
+                <img
+                  loading="lazy"
+                  height="220px"
+                  src="assets/card3.png"
+                  alt=""
+                />
                 <div class="card-body">
                   <p class="h4"><code>WisdomRecipes</code></p>
                   <!-- <p class="card-text">
@@ -268,7 +274,10 @@
         </div>
         <div class="col mt-5 col-sm-12 contact" data-aos="fade-up">
           <p class="h3 fw-bold" id="contact">Contact</p>
-          <p class="card-title display-7 text-muted" style="text-align: justify">
+          <p
+            class="card-title display-7 text-muted"
+            style="text-align: justify"
+          >
             If you have any questions or would like to discuss potential
             opportunities, please do not hesitate to contact me. You can reach
             me via email at <a href="mailto:kywagle@gmail,com">kywagle</a> . I
@@ -321,17 +330,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js"
-      integrity="sha512-uaZ0UXmB7NHxAxQawA8Ow2wWjdsedpRu7nJRSoI2mjnwtY8V5YiCWavoIpo1AhWPMLiW5iEeavmA3JJ2+1idUg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="js/index.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
