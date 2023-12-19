@@ -4,6 +4,7 @@ const navbar = document.getElementsByClassName("navbar")[0];
 const body = document.getElementById("body");
 const card_body = document.getElementsByClassName("card-body");
 const progressBar = document.getElementsByClassName("progress-bar")[0];
+const emailInput = document.getElementById('exampleInputEmail1')
 let theme = "dark";
 
 nighttheme.addEventListener("click", function () {
@@ -22,6 +23,7 @@ daytheme.addEventListener("click", function () {
   navbar.classList.replace("navbar-dark", "navbar-light");
   navbar.classList.replace("bg-dark", "bg-light");
   body.classList.toggle("body");
+  emailInput.classList.toggle("text-white")
 });
 
 if (localStorage.getItem("theme")) {
