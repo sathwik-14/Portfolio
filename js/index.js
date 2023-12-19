@@ -1,4 +1,4 @@
-const nighttheme = document.getElementsByClassName("fa-moon")[0];
+const nighttheme = document.getElementsByClassName("bx-moon")[0];
 const daytheme = document.getElementById("sun");
 const navbar = document.getElementsByClassName("navbar")[0];
 const body = document.getElementById("body");
