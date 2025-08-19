@@ -1,239 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wagle Sathwik | Home</title>
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="shortcut icon" href="assets/ws.png" type="image/x-icon" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sathwik Wagle — NeoGlass Dev</title>
 
-<body id="body">
-  <!-- START OF NAVBAR  -->
-  <nav class="container py-4 navbar d-block navbar-expand-lg sticky-top nav-light navbg-light">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap (optional; used for grid & navbar behavior) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Top progress bar -->
+  <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+
+  <!-- NAVBAR -->
+  <nav class="container navbar navbar-expand-lg sticky-top glassy glass" aria-label="Main Navigation">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./assets/ws.png" alt="" width="90" height="40"
-          class="d-inline-block align-top" />
+      <a class="navbar-brand" href="#" aria-label="Home">
+        <img src="./assets/ws.png" alt="SW Logo" width="96" height="40" />
       </a>
-      <div class="theme-btn ms-auto">
-        <i class="bx bx-sun mx-2 d-none fa-xl" id="sun"></i>
-        <i class="bx bx-moon mx-2 fa-xl" id="moon"></i>
+
+      <div class="d-flex align-items-center ms-auto me-2">
+        <button id="themeToggle" class="btn btn-ghost me-2" aria-label="Toggle theme">
+          <i class='bx bx-moon' id="moonIcon"></i>
+          <i class='bx bx-sun d-none' id="sunIcon"></i>
+        </button>
       </div>
-      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="btn btn-outline-success" type="submit">Connect</a>
+        <a href="#contact" class="btn btn-neo" type="button">Connect</a>
       </div>
     </div>
   </nav>
-  <!-- END OF NAVBAR  -->
 
-  <div class="progress-container">
-    <div class="progress-bar"></div>
-  </div>
-
-  <div class="container" id="scroll-container">
-    <div class="row my-3">
-      <!-- START OF HERO SECTION  -->
-      <div class="col col-12 mt-5 col-md-12 d-flex flex-column justify-content-center">
-        <p class="fw-bold hero-text">
-          <span>&lt;</span> <span id="my-name"></span> <span>/&gt;</span>
-        </p>
-        <p class="display-7 text-muted">Full Stack Web Developer</p>
-      </div>
-      <!-- END OF HERO SECTION  -->
-
-      <!-- START OF SKILLS SECTION -->
-      <div class="col mt-5 col-sm-12 col-lg-12" id="skills-container">
-        <p class="h3 fw-bold skills" id="skills-title">skills</p>
-        <div class="d-flex flex-wrap gap-3 skills mt-3 skill-group-hidden">
-          <div class="d-flex justify-content-around group ">
-            <i class="bx bxl-html5" title="HTML5"></i>
-
-            <i class="bx bxl-css3" title="CSS3"></i>
-
-            <i class="bx bxl-javascript" title="JACASCRIPT"></i>
-
-            <div class="position-absolute bottom-0 mb-1 text-muted">CORE</div>
-          </div>
-          <div class="d-flex justify-content-around group">
-            <i class="bx bxl-angular" title="ANGULAR"></i>
-
-            <i class="bx bxl-react" title="REACT"></i>
-
-            <div class="position-absolute bottom-0 mb-1 text-muted">
-              FRAMEWORK
-            </div>
-          </div>
-          <div class="d-flex justify-content-around group">
-            <i class="bx bxl-bootstrap" title="BOOTSTRAP"></i>
-
-            <i class="bx bxl-tailwind-css" title="TAILWIND-CSS"></i>
-
-            <div class="position-absolute bottom-0 mb-1 text-muted">
-              CSS LIBRARY
-            </div>
-          </div>
-          <div class="d-flex justify-content-around group">
-            <i class="bx bxl-mongodb" title="MONGODB"></i>
-
-            <i class="bx bxl-postgresql" title="POSTGRESQL"></i>
-
-            <div class="position-absolute bottom-0 mb-1 text-muted">
-              DATABASE
-            </div>
-          </div>
-          <div class="d-flex justify-content-around group">
-            <i class="bx bxl-nodejs" title="NODEJS"></i>
-
-            <div class="position-absolute bottom-0 mb-1 text-muted">
-              BACKEND
-            </div>
-          </div>
-          <div class="d-flex justify-content-around group">
-            <i class="bx bxl-github" title="GITHUB"></i>
-            <i class="bx bxl-gitlab" title="GITLAB"></i>
-
-            <div class="position-absolute bottom-0 mb-1 text-muted">
-              VERSION CONTROL
-            </div>
+  <!-- HERO -->
+  <section class="hero position-relative">
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="reveal"><span class="gradient-text">&lt;</span> <span id="my-name" class="gradient-text">Sathwik Wagle</span> <span class="gradient-text">/&gt;</span></h1>
+          <p class="hero-sub reveal">Full Stack Web Developer • Angular • React • Node • Postgres • Tailwind</p>
+          <div class="mt-4 reveal">
+            <a href="#projects" class="btn btn-neo me-2">View Projects</a>
+            <a href="mailto:kywagle@gmail.com?subject=Hiring%20Inquiry&body=Hello%20Sathwik%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity.%0D%0A%0D%0AThanks%2C%0D%0A[Your%20Name]" class="btn btn-ghost">Hire Me</a>
           </div>
         </div>
       </div>
-      <!-- END OF SKILLS SECTION  -->
-
-      <!-- START OF PROJECTS SECTION  -->
-      <div class="col mt-5 col-lg-12 col-sm-12 projects" data-aos="fade-up">
-        <p class="h3 fw-bold" id="projects">projects</p>
-        <div class="row">
-          <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
-            <div class="card">
-              <img loading="lazy" height="220px" src="assets/card1.png" alt="" loading="lazy" />
-              <div class="card-body">
-                <p class="h4"><code>KnowYourCgpa</code></p>
-                <!-- <p class="card-text">
-                    Web application built to calculate grades of students at
-                    VTU. I worked as a frontend developer for this project.
-                    Built with use of HTML,CSS and JS.
-                  </p> -->
-                <a href="https://github.com/sathwik-14/KNOW_YOUR_CGPA" class="btn btn-outline-primary">Source
-                  Code&nbsp;<i class="bx bx-code-alt"></i></a>&nbsp;<a href="https://knowyourcgpa.onrender.com"
-                  class="btn btn-outline-success ms-2">visit&nbsp;<i class="bx bx-link-external"
-                    aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
-            <div class="card">
-              <img loading="lazy" height="220px" src="assets/card6.jpg" alt="" />
-              <div class="card-body">
-                <p class="h4"><code>Product Landing Page</code></p>
-                <!-- <p class="card-text">
-                    This website is a clone of official apple watch ultra
-                    landing page built using help of bootstrap.
-                  </p> -->
-                <a href="https://github.com/sathwik-14/apple-watch-website-clone" class="btn btn-outline-primary">Source
-                  Code&nbsp;<i class="bx bx-code-alt"></i></a>&nbsp;<a
-                  href="https://waglesathwik-applewatchultra.onrender.com/"
-                  class="btn btn-outline-success ms-2">visit&nbsp;<i class="bx bx-link-external"
-                    aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
-            <div class="card">
-              <img loading="lazy" height="220px" src="assets/card2.jpg" alt="" />
-              <div class="card-body">
-                <p class="h4"><code>Netflix Clone</code></p>
-                <!-- <p class="card-text">
-                    Web application for a teaching group that give updates on
-                    latest courses. It is also a platform for students to
-                    register to those courses.I worked as a part of design team.
-                  </p> -->
-                <a href="https://github.com/sathwik-14/netflix-clone" class="btn btn-outline-primary">Source
-                  Code&nbsp;<i class="bx bx-code-alt"></i></a>&nbsp;<a href="https://main--netflixky.netlify.app/"
-                  target="_blank" class="btn btn-outline-success ms-2">visit&nbsp;<i class="bx bx-link-external"
-                    aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
-            <div class="card">
-              <img loading="lazy" height="220px" src="assets/card3.png" alt="" />
-              <div class="card-body">
-                <p class="h4"><code>WisdomRecipes</code></p>
-                <!-- <p class="card-text">
-                    A recipe website built using HTML,SCSS and JS.This project
-                    helped me to understand sass(CSS with superpower) and its
-                    functionality.
-                  </p> -->
-                <a href="https://github.com/sathwik-14/WisdomRecipes" class="btn btn-outline-primary">Source
-                  Code&nbsp;<i class="bx bx-code-alt"></i></a>&nbsp;<a
-                  href="https://sathwik-14.github.io/WisdomRecipes/" class="btn btn-outline-success ms-2">visit&nbsp;<i
-                    class="bx bx-link-external" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END OF PROJECTS SECTION  -->
-
-      <!-- START OF CONTACT SECTION  -->
-      <div class="col mt-5 col-sm-12 contact" data-aos="fade-up">
-        <p class="h3 fw-bold" id="contact">Contact</p>
-        <p class="card-title display-7 text-muted" style="text-align: justify">
-          If you have any questions or would like to discuss potential
-          opportunities, please do not hesitate to contact me. You can reach
-          me via email at <a href="mailto:kywagle@gmail,com">kywagle</a> . I
-          am always open to new ideas and collaboration, and I am eager to
-          hear from potential employers or clients. Thank you for considering
-          me as a candidate, and I look forward to hearing from you. Leave
-          your mail to subscribe for weekly updates from me.
-        </p>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email"
-              class="form-control w-50 w-lg-25 bg-transparent shadow-none text-white border-0 border-bottom"
-              id="exampleInputEmail1" placeholder="Enter email here" aria-describedby="emailHelp" />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn-outline-secondary">
-            Submit
-          </button>
-        </form>
-        <br />
-        <p>Don't forget to follow me on</p>
-        <a href="https://github.com/sathwik-14"><i class="bx bxl-github"></i></a>
-        <a href="https://www.facebook.com/wagle31/"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/waglesathwik/"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.instagram.com/sathwikwagle/"><i class="bx bxl-instagram"></i></a>
-      </div>
-      <!-- END OF CONTACT SECTION  -->
     </div>
-  </div>
-  <script src="js/index.js"></script>
-</body>
+  </section>
 
+  <!-- SKILLS -->
+  <section class="py-4" id="skills">
+    <div class="container">
+      <h2 class="section-title h3 mb-3 reveal">skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icons d-flex align-items-center flex-wrap mb-3">
+            <i class='bx bxl-html5' title='HTML5' aria-hidden="true"></i>
+            <i class='bx bxl-css3' title='CSS3' aria-hidden="true"></i>
+            <i class='bx bxl-javascript' title='JavaScript' aria-hidden="true"></i>
+            <i class='bx bxl-typescript' title='typescript' aria-hidden="true"></i>
+          </div>
+          <span class="skill-title">CORE</span>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icons d-flex align-items-center flex-wrap mb-3">
+            <i class='bx bxl-angular' title='Angular' aria-hidden="true"></i>
+            <i class='bx bxl-react' title='React' aria-hidden="true"></i>
+          </div>
+          <span class="skill-title">FRAMEWORKS</span>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icons d-flex align-items-center flex-wrap mb-3">
+            <i class='bx bxl-bootstrap' title='Bootstrap' aria-hidden="true"></i>
+            <i class='bx bxl-tailwind-css' title='Tailwind CSS' aria-hidden="true"></i>
+          </div>
+          <span class="skill-title">CSS LIBRARIES</span>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icons d-flex align-items-center flex-wrap mb-3">
+            <i class='bx bxl-mongodb' title='MongoDB' aria-hidden="true"></i>
+            <i class='bx bxl-postgresql' title='PostgreSQL' aria-hidden="true"></i>
+          </div>
+          <span class="skill-title">DATABASES</span>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icons d-flex align-items-center flex-wrap mb-3">
+            <i class='bx bxl-nodejs' title='Node.js' aria-hidden="true"></i>
+          </div>
+          <span class="skill-title">BACKEND</span>
+        </div>
+        <div class="skill-card glass reveal" data-tilt>
+          <div class="skill-icons d-flex align-items-center flex-wrap mb-3">
+            <i class='bx bxl-github' title='GitHub' aria-hidden="true"></i>
+            <i class='bx bxl-gitlab' title='GitLab' aria-hidden="true"></i>
+          </div>
+          <span class="skill-title">VERSION CONTROL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="py-4" id="projects">
+    <div class="container">
+      <h2 class="section-title h3 mb-3 reveal">projects</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4 reveal">
+          <div class="project-card glass">
+            <img class="thumb" src="assets/card5.png" alt="KnowYourCgpa preview" loading="lazy" />
+            <div class="p-3">
+              <p class="h5 mb-2">Business Dashboard</p>
+              <div class="mb-3">
+                <span class="badge-tech">Angular</span>
+                <span class="badge-tech">Tailwind</span>
+                <span class="badge-tech">Python</span>
+              </div>
+              <div class="d-flex gap-2">
+                <!-- <a href="https://amazonoow.ctdi.co.in/" class="btn btn-ghost" aria-label="Source code for KnowYourCgpa">Source Code <i class='bx bx-code-alt'></i></a> -->
+                <a href="https://conversation.buckleconsult.com/" target="_blank" class="btn btn-neo" aria-label="Visit KnowYourCgpa">Visit <i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 reveal">
+          <div class="project-card glass">
+            <img class="thumb" src="assets/card4.png" alt="KnowYourCgpa preview" loading="lazy" />
+            <div class="p-3">
+              <p class="h5 mb-2">Amazon CTDI</p>
+              <div class="mb-3">
+                <span class="badge-tech">Angular</span>
+                <span class="badge-tech">EJS</span>
+              </div>
+              <div class="d-flex gap-2">
+                <!-- <a href="https://amazonoow.ctdi.co.in/" class="btn btn-ghost" aria-label="Source code for KnowYourCgpa">Source Code <i class='bx bx-code-alt'></i></a> -->
+                <a href="https://amazonoow.ctdi.co.in/" target="_blank" class="btn btn-neo" aria-label="Visit KnowYourCgpa">Visit <i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 reveal">
+          <div class="project-card glass">
+            <img class="thumb" src="assets/card6.png" alt="KnowYourCgpa preview" loading="lazy" />
+            <div class="p-3">
+              <p class="h5 mb-2">Voice AI Playground</p>
+              <div class="mb-3">
+                <span class="badge-tech">Angular</span>
+                <span class="badge-tech">Tailwind</span>
+                <span class="badge-tech">Python</span>
+              </div>
+              <div class="d-flex gap-2">
+                <!-- <a href="https://amazonoow.ctdi.co.in/" class="btn btn-ghost" aria-label="Source code for KnowYourCgpa">Source Code <i class='bx bx-code-alt'></i></a> -->
+                <a href="https://playground.heykoala.ai/" target="_blank" class="btn btn-neo" aria-label="Visit KnowYourCgpa">Visit <i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 reveal">
+          <div class="project-card glass">
+            <img class="thumb" src="assets/card1.png" alt="KnowYourCgpa preview" loading="lazy" />
+            <div class="p-3">
+              <p class="h5 mb-2">KnowYourCgpa</p>
+              <div class="mb-3">
+                <span class="badge-tech">Node</span>
+                <span class="badge-tech">EJS</span>
+                <span class="badge-tech">Express</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/sathwik-14/KNOW_YOUR_CGPA" class="btn btn-ghost" aria-label="Source code for KnowYourCgpa">Source Code <i class='bx bx-code-alt'></i></a>
+                <a href="https://knowyourcgpa.onrender.com" target="_blank" class="btn btn-neo" aria-label="Visit KnowYourCgpa">Visit <i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 reveal">
+          <div class="project-card glass">
+            <img class="thumb" src="assets/card6.jpg" alt="Product Landing Page preview" loading="lazy" />
+            <div class="p-3">
+              <p class="h5 mb-2">Product Landing Page</p>
+              <div class="mb-3">
+                <span class="badge-tech">HTML</span>
+                <span class="badge-tech">CSS</span>
+                <span class="badge-tech">JS</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/sathwik-14/apple-watch-website-clone" class="btn btn-ghost">Source Code <i class='bx bx-code-alt'></i></a>
+                <a href="https://waglesathwik-applewatchultra.onrender.com/" target="_blank" class="btn btn-neo">Visit <i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 reveal">
+          <div class="project-card glass">
+            <img class="thumb" src="assets/card2.jpg" alt="Netflix Clone preview" loading="lazy" />
+            <div class="p-3">
+              <p class="h5 mb-2">Netflix Clone</p>
+              <div class="mb-3">
+                <span class="badge-tech">React</span>
+                <span class="badge-tech">TMDB</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/sathwik-14/netflix-clone" class="btn btn-ghost">Source Code <i class='bx bx-code-alt'></i></a>
+                <a href="https://netflixky.netlify.app/" target="_blank" class="btn btn-neo">Visit <i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-4" id="contact">
+    <div class="container">
+      <h2 class="section-title h3 mb-3 reveal">contact</h2>
+      <div class="contact-card glass-strong reveal">
+        <p class="card-title" style="text-align: justify">
+          If you have any questions or would like to discuss potential opportunities, please reach out. You can email me at
+          <a href="mailto:kywagle@gmail.com">kywagle@gmail.com</a>. I'm open to collaborations and new ideas. Drop your email below to subscribe for occasional updates.
+        </p>
+        <form class="mt-3" onsubmit="event.preventDefault(); subscribeEmail();">
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control w-100 w-lg-50 bg-glass shadow-none" id="emailInput" placeholder="Enter email here" required />
+            <!-- <div id="emailHelp" class="text-muted">We'll never share your email with anyone else.</div> -->
+          </div>
+          <button type="submit" class="btn btn-ghost">Submit</button>
+          <span class="ms-2" id="subResult" aria-live="polite"></span>
+        </form>
+        <!-- <hr class="my-4" />
+        <p>Don't forget to follow me on</p>
+        <div class="d-flex align-items-center gap-3 fs-3">
+          <a href="https://github.com/sathwik-14" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://www.facebook.com/wagle31/" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.linkedin.com/in/waglesathwik/" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://www.instagram.com/sathwikwagle/" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="glass text-center rounded-4 p-3">Designed with ❤</div>
+  </footer>
+
+  <!-- JS: Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // === Theme Toggle ===
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const moon = document.getElementById('moonIcon');
+    const sun = document.getElementById('sunIcon');
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') { document.body.classList.add('theme-light'); sun.classList.remove('d-none'); moon.classList.add('d-none'); }
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('theme-light');
+      const isLight = document.body.classList.contains('theme-light');
+      sun.classList.toggle('d-none', !isLight);
+      moon.classList.toggle('d-none', isLight);
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+
+    // === Scroll Progress Bar ===
+    const progressBar = document.getElementById('progressBar');
+    const setProgress = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = height ? (scrollTop / height) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    };
+    window.addEventListener('scroll', setProgress, { passive: true });
+    window.addEventListener('resize', setProgress);
+    setProgress();
+
+    // === Reveal on scroll ===
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+
+    // === Simple tilt for skill cards ===
+    const tiltEls = document.querySelectorAll('[data-tilt]');
+    tiltEls.forEach(el => {
+      el.addEventListener('pointermove', (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left; const y = e.clientY - rect.top;
+        const rx = ((y / rect.height) - 0.5) * -6; // rotateX
+        const ry = ((x / rect.width) - 0.5) * 6;   // rotateY
+        el.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+      });
+      el.addEventListener('pointerleave', () => { el.style.transform = ''; });
+    });
+
+    // === Particle background (lightweight) ===
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles;
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+    function resize() {
+      W = canvas.clientWidth = canvas.parentElement.clientWidth;
+      H = canvas.clientHeight = 360;
+      canvas.width = W * DPR; canvas.height = H * DPR; ctx.scale(DPR, DPR);
+      spawn();
+    }
+
+    function spawn() {
+      particles = Array.from({ length: 64 }, () => ({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        r: Math.random() * 2 + 0.5,
+        a: Math.random() * Math.PI * 2
+      }));
+    }
+
+    function draw() {
+      ctx.clearRect(0,0,W,H);
+      // lines
+      for (let i=0; i<particles.length; i++) {
+        const p = particles[i];
+        for (let j=i+1; j<particles.length; j++) {
+          const q = particles[j];
+          const dx = p.x - q.x, dy = p.y - q.y; const d = Math.hypot(dx, dy);
+          if (d < 120) {
+            ctx.globalAlpha = 1 - d/120; ctx.strokeStyle = `rgba(127,90,240,${0.35*(1-d/120)})`;
+            ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+          }
+        }
+      }
+      // points
+      ctx.globalAlpha = 0.9; ctx.fillStyle = '#7f5af0';
+      particles.forEach(p => { ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2); ctx.fill(); });
+    }
+
+    function step() {
+      particles.forEach(p => {
+        p.x += p.vx; p.y += p.vy; p.a += 0.01;
+        p.x = (p.x + W) % W; p.y = (p.y + H) % H;
+      });
+      draw();
+      requestAnimationFrame(step);
+    }
+
+    resize(); step();
+    window.addEventListener('resize', resize);
+
+    // === Type effect for name (subtle) ===
+    const nameEl = document.getElementById('my-name');
+    const full = nameEl.textContent.trim();
+    nameEl.textContent = '';
+    let i = 0; const typer = () => { if (i <= full.length) { nameEl.textContent = full.slice(0,i); i++; setTimeout(typer, 80); } };
+    setTimeout(typer, 300);
+
+    // === Fake subscribe handler ===
+    function subscribeEmail(){
+      const email = document.getElementById('emailInput').value.trim();
+      const msg = document.getElementById('subResult');
+      if(!email) return;
+      msg.textContent = 'Thanks! You\'re on the list.';
+      setTimeout(()=>{ msg.textContent = ''; }, 4000);
+      (document.getElementById('emailInput')).value='';
+    }
+    window.subscribeEmail = subscribeEmail;
+
+    // === Konami Code Easter Egg (bonus) ===
+    (function(){
+      const code = [38,38,40,40,37,39,37,39,66,65]; let buf = [];
+      document.addEventListener('keydown', (e)=>{
+        buf.push(e.keyCode); if(buf.length>10) buf.shift();
+        if(JSON.stringify(buf)===JSON.stringify(code)) activateEgg();
+      });
+      function activateEgg(){
+        document.body.style.filter = 'hue-rotate(40deg)';
+        const note = document.createElement('div');
+        note.className = 'glass-strong';
+        note.style.position = 'fixed'; note.style.bottom = '20px'; note.style.left = '50%'; note.style.transform = 'translateX(-50%)';
+        note.style.padding = '10px 16px'; note.style.borderRadius = '12px';
+        note.textContent = '🛡 Developer Mode Activated';
+        document.body.appendChild(note);
+        setTimeout(()=> note.remove(), 3200);
+      }
+    })();
+  </script>
+</body>
 </html>
