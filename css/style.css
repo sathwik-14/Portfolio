@@ -47,7 +47,7 @@ body {
 body {
     margin: 0;
     color: var(--fg);
-    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg1));
+    background: black;
     background-size: 400% 400%;
     animation: gradientBG 24s ease infinite;
     font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
@@ -103,6 +103,10 @@ body {
 }
 
 /* Navbar */
+.navbar {
+    top:1rem !important
+}
+
 .navbar.glassy {
     border-radius: 18px;
     margin-top: 12px;
@@ -124,14 +128,40 @@ body {
 }
 
 .btn-neo {
-    --p: var(--primary);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 14px;
-    padding: 10px 16px;
-    font-weight: 700;
-    background: linear-gradient(90deg, var(--primary), var(--primary-2));
-    box-shadow: 0 8px 22px rgba(127, 90, 240, 0.35);
+  /* keep a local alias for the primary color */
+  --p: var(--primary);
+
+  color: #fff;
+  background-color: var(--p);                 /* single solid color (no gradient) */
+  border: 1px solid rgba(0, 0, 0, 0.06);      /* subtle border */
+  border-radius: 8px;                         /* less rounded */
+  padding: 10px 16px;
+  font-weight: 600;                           /* less bold than 700 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);  /* small, neutral shadow */
+  transition: transform 120ms ease, box-shadow 150ms ease, filter 120ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* subtle hover / focus feedback — small lift & slight darken */
+.btn-neo:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.97);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-neo:active {
+  transform: translateY(0);
+  filter: brightness(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.btn-neo:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06); /* accessible focus ring, subtle */
 }
 
 .btn-ghost {
