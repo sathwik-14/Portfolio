@@ -18,8 +18,8 @@ export default function BlogDetail() {
 
   useEffect(() => {
     const loadBlog = async () => {
-      const modules = import.meta.glob('../blogs/*.md', { as: 'raw', eager: true })
-      const path = `../blogs/${id}.md`
+      const modules = import.meta.glob('../blogs/*.md?raw', { eager: true })
+      const path = `../blogs/${id}.md?raw`
       if (modules[path]) {
         const { attributes, body } = fm(modules[path])
         setBlog({ ...attributes, content: body })

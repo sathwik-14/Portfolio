@@ -9,10 +9,11 @@ export default function Blogs() {
 
   useEffect(() => {
     const loadBlogs = async () => {
-      const modules = import.meta.glob('../blogs/*.md', { as: 'raw', eager: true })
+      const modules = import.meta.glob('../blogs/*.md?raw', { eager: true })
       const blogList = Object.entries(modules).map(([path, content]) => {
         const { attributes, body } = fm(content)
-        const id = path.split('/').pop().replace('.md', '')
+        const fileName = path.split('/').pop()?.split('?')[0] ?? ''
+        const id = fileName.replace(/\.md$/, '')
         return { id, ...attributes, content: body }
       }).sort((a, b) => new Date(b.date) - new Date(a.date))
       
